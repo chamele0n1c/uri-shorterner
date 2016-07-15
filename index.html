@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>SMF URL Shortner</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="https://smfree.cf/smf.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' integrity='sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS' crossorigin='anonymous'></script>
+<script type="text/javascript" src="js/main.js"></script>
+<style>
+</style>
+<title>SMF - Free URL Shortener</title>
+<meta name="Description" content="Shorten URL's free, No Ads. ">
+<meta name="Keywords" content="URL, Shortener, Free, Shorten">
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+</head>
+<body>
+<div id="ngh">
+</div>
+
+<div id="main">
+
+<form class="form-horizontal" action="make.py" method="post">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Shorten URL</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="url">URL</label>  
+  <div class="col-md-4">
+  <input id="url" name="url" type="text" placeholder="URL" class="form-control input-md" required="">
+  <span class="help-block">URL Goes Here</span>  
+  </div>
+</div>
+
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="cs">Custom URL Extension</label>  
+  <div class="col-md-4">
+  <input id="cs" name="cs" type="text" maxlength="30" placeholder="Custom URL" class="form-control input-md">
+  <span class="help-block">12 MAX characters ONLY</span>  
+  </div>
+</div>
+
+<!-- ReCaptcha-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="cs">Make sure you are human</label>
+  <div class="col-md-4">
+    <div class="g-recaptcha" data-theme="dark" data-sitekey="obviously-your-site-key"></div>
+    <span class="help-block">This is self explanatory</span>  
+  </div>
+</div>
+
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton">Shorten URL</label>
+  <div class="col-md-4">
+    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+</div>
+
+<div id="footer" style="align: center; text-align: center; margin-right: auto; margin-left: auto;">
+
+<a href="http://github.com/isa7cups"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2000px-Octicons-mark-github.svg.png" width="100" height="100" /></a>
+
+</div>
+</body>
+</html>
+
