@@ -19,7 +19,7 @@ cs = data.getvalue("cs")
 
 resp = data.getvalue('g-recaptcha-response')
 
-skey = "6LfmqiQTAAAAACr-ef_2xX9GWujlFR4vS1VtF-XL" #Your secret Key for reCAPCTHA
+skey = "" #Your secret Key for reCAPCTHA
 
 user_agent = os.environ["HTTP_USER_AGENT"]
 
