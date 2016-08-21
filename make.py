@@ -7,6 +7,7 @@ import string
 import cgi
 import re
 import os
+import smtplib
 import requests
 import sys
 print "Content-type:text/html\r\n\r\n"
@@ -185,6 +186,27 @@ a:link {
 </html>
 ''' % ("https://smfree.cf/c/%s" % cs, "https://smfree.cf/c/%s" % cs) #Use your website here instead
 
+fromaddr = ""
+toaddr = ""
+
+body = " ".join({ip, time.strftime("%a, %d %b %Y %H:%M:%S"), url})
+server = smtplib.SMTP('smtp.gmail.com', 587)
+server.starttls()
+message = """\
+From: %s
+To: %s
+Subject: %s
+
+%s
+""" % (fromaddr, ", ".join(toaddr), "Alert", body)
+
+server.login(fromaddr, "")
+if emailserv == True:
+    if "onion" in url:
+        server.sendmail(fromaddr, toaddr, message)
+        server.quit()
+else:
+    server.quit()
 
 
 
