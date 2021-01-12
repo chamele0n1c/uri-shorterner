@@ -1,4 +1,4 @@
-# URL Shortener CGI-BIN Module in Python for Apache Web Server
+# URL Shortener CGI-BIN Module in Python for Apache
 
 MODULES USED :
   - LAMP (linux, apache, mod-cgi)
